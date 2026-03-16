@@ -38,7 +38,7 @@ function Dashboard(){
 
     if(!end_time) return "Auction Ended";
 
-    const end = new Date(end_time);
+    const end = new Date(end_time + 'Z');
     const now = new Date();
 
     const diff = end - now;
